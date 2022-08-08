@@ -119,13 +119,11 @@ function Demo() {
               2/ Provide the physical address where you would like to receive your physical branch.
               <br></br>
               <br></br>
-              <form style={{textAlign: 'center'}}>
-              <label>
+              <div style={{textAlign: 'center'}}>
               <b>Address:</b>&nbsp;&nbsp;
               <input type="text" name="Address" />
-              </label>
-              &nbsp;&nbsp;<input type="submit" value="Register" />
-              </form>
+              &nbsp;&nbsp;<button>Register</button>
+              </div>
               <br></br>
               3/ To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm all information.
               <br></br>

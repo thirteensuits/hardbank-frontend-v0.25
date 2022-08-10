@@ -1,6 +1,6 @@
-# HardBank -- manifesting on-chain commerce. 
+# HardBank -- realizing full-chain commerce.
 
-This is Version 0.1 of HardBank. Our frontend was built thanks to the open-source resources provided by the following:
+This is Version 0.25 of HardBank. Our frontend was built thanks to the open-source resources provided by the following:
 
 The Stripes NFT: https://github.com/The-Stripes-NFT/
 
@@ -10,16 +10,15 @@ Thanks a ton, for real.
 
 ## Available Scripts
 
-We assume that React is already installed on your device, and suggest using Virtual Studio Code.
+We suggest using Virtual Studio Code.
 
 The following commands will launch the app in your localhost:3000
 
 ### `npm install`
-### `npm start`
+### `npm run start`
 
-Additionally, chokidar may be needed to be specifically installed.
-
-### `npm install chokidar`
+Our live demo can be checked out below:
+https://hardbank.io/
 
 ## Components and Config
 

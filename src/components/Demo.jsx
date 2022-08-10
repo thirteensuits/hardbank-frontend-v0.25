@@ -116,6 +116,7 @@ function Demo() {
               <b>Address:</b>&nbsp;&nbsp;
               <input type="text" name="Address" />
               <br></br>
+              <br></br>
               <button>Register</button>
               </div>
               <br></br>

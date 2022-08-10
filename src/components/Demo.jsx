@@ -43,12 +43,11 @@ function Demo() {
       <br></br>
       <Container>
       <section id="buy">
-        <div>
-          
+          <div>
+            <br></br>
             <img src={img} style={{width: "100%"}}/>
           </div>
           <div>
-            <br></br>
             <br></br>
             <h5 style={{textAlign: 'center'}}><b>THE BEST BRANCHES IN TOWN</b></h5>
             <h5 style={{textAlign: 'center', color: 'red'}}><b>0.001 ETH</b></h5>
@@ -82,18 +81,18 @@ function Demo() {
             In order to purchase one of the best branches in town, you need to first connect your wallet and mint a BranchSBT from the BranchSBT smart contract.
             <br></br>
             <br></br>
-            <img src={hiw1} className="d-block mx-auto img-fluid w-50" style={{width: "100%"}}/>
+            <img src={hiw1} className="d-block mx-auto img-fluid" style={{width: "100%"}}/>
             <br></br>
             Each BranchSBT can be used to claim one branch. In addition to receiving the branch at a physical address of your choice, you will also receive loyalty tokens.
             <br></br>
             <br></br>
             <br></br>
-            <img src={hiw2} className="d-block mx-auto img-fluid w-50" style={{width: "100%"}}/>
+            <img src={hiw2} className="d-block mx-auto w-50" style={{width: "100%"}}/>
             <br></br>
             The loyalty tokens can be used to help determine the direction of our brand by voting on proposals or suggesting new proposals.
             <br></br>
             <br></br>
-            <img src={hiw3} className="d-block mx-auto img-fluid w-50" style={{width: "100%"}}/>
+            <img src={hiw3} className="d-block img-fluid w-50" style={{width: "100%"}}/>
             <br></br>
             The BranchSBT will remain in your wallet as a receipt of your purchase. But remember, each BranchSBT can only be used for one claim.
             <img src={divider} style={{width: "100%"}}/>

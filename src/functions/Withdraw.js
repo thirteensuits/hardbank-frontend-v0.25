@@ -111,7 +111,7 @@ const Withdraw = () => {
         </button>
     ) : (
       <>
-         <b>Available Balance:</b> <b>{ban}</b>
+         <b>Available Balance:</b> <b>{ban/1000000000000000000}</b>
 <br></br>
 <br></br>
 

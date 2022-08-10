@@ -117,7 +117,7 @@ function Demo() {
               <input type="text" name="Address" />
               <br></br>
               <br></br>
-              <button>Register</button>
+              <button style={{marginBottom: 5, padding: 5, paddingLeft: 20, paddingRight: 20}}>REGISTER</button>
               </div>
               <br></br>
               3/ To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm all information.

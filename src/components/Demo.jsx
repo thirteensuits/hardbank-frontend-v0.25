@@ -25,11 +25,7 @@ const slides = [
   { url: "https://i.imgur.com/LEy127l.jpeg"},  
 ];
 
-const containerStyles = {
-  width: "100%",
-  height: "450px",
-  margin: "0 auto",
-};
+
 
 function Demo() {
   return (
@@ -40,7 +36,7 @@ function Demo() {
         <br></br>
         <br></br>
       </h5>
-      <div style={containerStyles}>
+      <div >
       <ImageSlider slides={slides} />
       </div>
       <br></br>
@@ -49,11 +45,11 @@ function Demo() {
       <br></br>
       <Container>
       <section id="buy">
-        <Row>
-          <Col>
+        <div>
+          
             <img src={img} style={{width: "100%"}}/>
-          </Col>
-          <Col>
+          </div>
+          <div>
             <br></br>
             <br></br>
             <h5 style={{textAlign: 'center'}}><b>THE BEST BRANCHES IN TOWN</b></h5>
@@ -78,8 +74,7 @@ function Demo() {
             <Provider store={store}>
             <Mint />
             </Provider>
-          </Col>
-        </Row>
+          </div>
         <br></br>
         </section>
         <Row>
@@ -108,8 +103,8 @@ function Demo() {
           </Col>
         </Row>
         <section id="claim">
-        <Row>
-          <Col>
+
+          <div>
           <br></br>
               <h5 style={{textAlign: 'center'}}><b>CLAIM YOUR BRANCH</b></h5>
               <p style={{textAlign: 'center'}}><i>To claim your physical branch, please do the following</i></p>
@@ -136,11 +131,10 @@ function Demo() {
               </Provider>
               <br></br>
               Upon completion, you will receive 10 $TREE loyalty tokens in your Web3 wallet -- but remember, each BranchSBT can only be claimed once!              <br></br>
-          </Col>
-          <Col>
+          </div>
+          <div>
           <img src={img2} style={{width: "100%"}}/>
-          </Col>
-        </Row>
+          </div>
         </section>
         </Container>
         <br></br>

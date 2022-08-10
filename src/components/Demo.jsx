@@ -91,15 +91,18 @@ function Demo() {
             <br></br>
             <br></br>
             <img src={hiw1} className="d-block mx-auto img-fluid w-50" style={{width: "50%"}}/>
+            <br></br>
             Each BranchSBT can be used to claim one branch. In addition to receiving the branch at a physical address of your choice, you will also receive loyalty tokens.
             <br></br>
             <br></br>
             <br></br>
             <img src={hiw2} className="d-block mx-auto img-fluid w-50" style={{width: "50%"}}/>
+            <br></br>
             The loyalty tokens can be used to help determine the direction of our brand by voting on proposals or suggesting new proposals.
             <br></br>
             <br></br>
             <img src={hiw3} className="d-block mx-auto img-fluid w-50" style={{width: "50%"}}/>
+            <br></br>
             The BranchSBT will remain in your wallet as a receipt of your purchase. But remember, each BranchSBT can only be used for one claim.
             <img src={divider} style={{width: "100%"}}/>
           </Col>

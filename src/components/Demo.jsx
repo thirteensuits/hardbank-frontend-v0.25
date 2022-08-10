@@ -41,8 +41,6 @@ function Demo() {
       </div>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
       <Container>
       <section id="buy">
         <div>
@@ -75,7 +73,6 @@ function Demo() {
             <Mint />
             </Provider>
           </div>
-        <br></br>
         </section>
         <Row>
           <Col>

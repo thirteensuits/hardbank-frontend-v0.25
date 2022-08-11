@@ -59,9 +59,17 @@ We define such transactions -- where both sides of the exchange are represented 
 
 Purchasing an NFT for ETH is an example of a full-chain transaction: when the two assets are exchanged, both sides of the transaction -- (i) the NFT to buyer and (ii) the ETH to seller -- are recorded on the blockchain: the entire transaction is represented, in full, on the blockchain.
 
+<p align="center">
+<img src="full-chain.jpg" width="50%">
+</p>
+
 Currently, there are many payment processors which allow crypocurrency to be used to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser to the merchant (or payments provider) is recorded on the blockchain; however, there is no information on the blockchain regarding the product that was purchased.
 
 We define these transactions where only half of the information is recorded on the blockchain to be <b>half-chain transactions</b>. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
+
+<p align="center">
+<img src="half-chain.jpg" width="50%">
+</p>
 
 Half-chain transactions make no use of any of the functionalities offered by blockchain technology and have questionable value-add beyond treating cryptocurrency as a currency.
 

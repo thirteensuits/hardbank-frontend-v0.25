@@ -6,7 +6,7 @@ function Footer() {
       <footer class="py-3 bg-dark">
         <div class="container">
           <p class="m-0 text-center text-white">
-            <a href="https://github.com/thirteensuits" target="_blank" rel="noreferrer">
+            <a href="https://github.com/thirteensuits/hardbank-frontend-v0.25" target="_blank" rel="noreferrer">
             GitHub
             </a>
             &nbsp;|&nbsp;

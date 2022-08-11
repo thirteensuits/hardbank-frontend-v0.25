@@ -111,7 +111,7 @@ This is page is for the product owners to see the proceeds from the sale of the 
 
 The proceeds from minting the SBTs are stored in the SBT's smart contract. These proceeds can be withdrawn to a payment smart contract by the product owners.
 
-![HIW4](HIW4.jpg)
+![HIW6](HIW6.jpg)
 
 In the payment smart contract, the product owners can choose to divvy up the proceeds amongst themselves to their choosing. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
 

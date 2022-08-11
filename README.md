@@ -79,23 +79,31 @@ This page stores the Demo where full-chain transactions for physical branch can 
 
 We injectively represent the branch with a unique SBT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today. Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of SBTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
+
 ![HIW4](HIW4.jpg)
+
 
 Just as a barcode is scanned to initiate the purchase of a product, the purchasing journey under our protocol begins with the purchaser minting an SBT from the aforementioned SBT smart contract address. Both sides of this transaction are consequently recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the SBT (or product), and (ii) the SBT (or representation of the product) transferred to the purchaser in exchange for the payment. This is a full-chain tranasction.
 
+
 ![HIW1](HIW1.jpg)
 
-Upon completing the full-chain transaction, the purchaser will then want to claim the physical product by providing the merchant with a physical address to receive the product.
 
-It is essential that each SBT that is minted can only claim one product. We accomplish this by having our claim process mimic a token airdrop exclusive to NFT holders -- for example, the ApeCoin airdrop for BAYC/MAYC holders -- which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
+Upon completing the full-chain transaction, the purchaser will then want to claim the physical product. It is essential that each SBT that is minted can only claim one product. We accomplish this by having our claim process mimic a token airdrop exclusive to NFT holders -- for example, the ApeCoin airdrop for BAYC/MAYC holders -- which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
 
-In addition to providing the physical address to receive the product, the purchaser must also provide the merchant with the index number of the SBT that was minted to complete the claim process. In order for this process to execute, the purchaser must be holding the SBT which corresponds to the index number that was provided. This exchange will ensure that the index number of each SBT that has completed a claim is been recorded on the blockchain. If the same index number initiates a second claim, the process will fail, ensuring that each minted SBT can only claim one product.
+In addition to providing the physical address to receive the product, the purchaser must also provide the merchant with the index number of the SBT that was minted to complete the claim process. In order for this process to execute, the purchaser must be holding the SBT which corresponds to the index number that was provided. This exchange will ensure that the index number of each SBT that has completed a claim is been recorded on the blockchain.
+
 
 ![HIW2](HIW2.jpg)
 
+
+If the same index number initiates a second claim, the process will fail, ensuring that each minted SBT can only claim one product.
+
 Since it mimics an airdrop, our claim function also provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
 
+
 ![HIW3](HIW3.jpg)
+
 
 ## Owner.jsx
 

@@ -78,18 +78,19 @@ function Demo() {
           <img src={divider} style={{width: "100%"}}/>
             <h2 style={{textAlign: 'center'}}><b>HOW IT WORKS</b></h2>
             <br></br>
-            In order to purchase one of the best branches in town, you need to first connect your wallet and mint a BranchSBT from the BranchSBT smart contract.
+            <br></br>
+            In order to purchase one of the best branches in town, first connect your wallet and mint a BranchSBT from the BranchSBT smart contract.
             <br></br>
             <br></br>
             <img src={hiw1} className="d-block mx-auto img-fluid" style={{width: "75%"}}/>
             <br></br>
-            Each BranchSBT can be used to claim one branch. In addition to receiving the branch at a physical address of your choice, you will also receive loyalty tokens.
+            Each BranchSBT can be used to claim one physical branch. In addition to receiving the branch at a physical address of your choice, you will also receive loyalty tokens in your wallet.
             <br></br>
             <br></br>
             <br></br>
             <img src={hiw2} className="d-block mx-auto img-fluid" style={{width: "75%"}}/>
             <br></br>
-            The loyalty tokens can be used to help determine the direction of our brand by voting on proposals or suggesting new proposals.
+            The loyalty tokens can be used to help determine the direction of our brand by suggesting and voting on proposals, such as selling new types of branches or potentially adding leaves to our product mix.
             <br></br>
             <br></br>
             <img src={hiw3} className="d-block mx-auto img-fluid" style={{width: "75%"}}/>
@@ -113,7 +114,7 @@ function Demo() {
               <br></br>
               <br></br>
               <div style={{textAlign: 'center'}}>
-              <b>Address:</b>&nbsp;&nbsp;
+              <b>ADDRESS:</b>&nbsp;&nbsp;
               <input type="text" name="Address" />
               <br></br>
               <br></br>

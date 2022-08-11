@@ -92,7 +92,6 @@ It is essential that each SBT that is minted can only claim one product. We acco
 In addition to providing the physical address to receive the product, the purchaser must also provide the merchant with the index number of the SBT that was minted to complete the claim process. In order for this process to execute, the purchaser must be holding the SBT which corresponds to the index number that was provided. This exchange will ensure that the index number of each SBT that has completed a claim is been recorded on the blockchain. If the same index number initiates a second claim, the process will fail, ensuring that each minted SBT can only claim one product.
 
 ![HIW2](HIW2.jpg)
-
 Since it mimics an airdrop, our claim function also provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
 
 ![HIW3](HIW3.jpg)

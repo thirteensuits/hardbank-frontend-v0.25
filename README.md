@@ -68,7 +68,7 @@ Currently, there are many payment processors which allow crypocurrency to be use
 We define these transactions where only half of the information is recorded on the blockchain to be <b>half-chain transactions</b>. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
 
 <p align="center">
-<img src="half-chain.jpg" width="50%">
+<img src="halfchain.jpg" width="50%">
 </p>
 
 Half-chain transactions make no use of any of the functionalities offered by blockchain technology and have questionable value-add beyond treating cryptocurrency as a currency.

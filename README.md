@@ -80,7 +80,7 @@ This page stores the Demo where full-chain transactions for physical branch can 
 We injectively represent the branch with a unique SBT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today. Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of SBTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
 
-![HIW4](HIW4.jpg)
+![HIW0](HIW0.jpg)
 
 
 Just as a barcode is scanned to initiate the purchase of a product, the purchasing journey under our protocol begins with the purchaser minting an SBT from the aforementioned SBT smart contract address. Both sides of this transaction are consequently recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the SBT (or product), and (ii) the SBT (or representation of the product) transferred to the purchaser in exchange for the payment. This is a full-chain tranasction.

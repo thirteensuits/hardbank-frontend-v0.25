@@ -22,19 +22,27 @@ https://hardbank.io/
 
 ## Components and Config
 
-The front-end makes use of React across a multi-page website. Each page in the website is held in the components subfolder of the src folder.
+The front-end makes use of React across a multi-page website. There are three main pages, each held in the components subfolder of the src folder, which also includes the Navigation.jsx for the navigation bar and Footer.jsx for the footer.
 
-There are several blockchain applications present throughout the website, and each make heavy use of React-Redux. Each application is stored as a .js file within the src folder, and has been exported as a function to the aforementioned pages in the components subfolder.
+The three main pages are as follows:
+
+ - Home.jsx -- this is the starting page which provides a summary of the protocol.
+
+ - Demo.jsx -- this page contains a Demo of the protocol operating on the Rinkeby testnet.
+
+ - Owner.jsx -- this page is for product owners, who can view and withdraw proceeds from product sales in real-time.
+
+There are several blockchain applications present throughout the website, and each make heavy use of React-Redux. Each application is stored as a .js file within the functions subfolder of the src folder, and has been exported as a function to the aforementioned pages in the components subfolder.
 
 As denoted in the config.json, the applications on this website are meant to be operate on the Rinkeby testnet, as this is still a work in progress.
 
-There are three smart contract addresses that can be configured in the config.json with their respective ABIs in the config folder:
+There are three smart contract addresses that can be configured in the config.json with their respective ABIs in the config subfolder located in the public folder:
 
  - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product; products are purchased by minting NFTs from this contract.
    - corresponds to abi.json
 
  - TOKEN_ADDRESS -- this smart contract is engaged during the claim process and provides loyalty tokens to reward those who purchase the product while also ensuring that each minted NFT can only undergo the claim process once - i.e. one NFT can only claim one product.
-   - corresponds to token_abi.json2
+   - corresponds to token_abi.json
 
  - PAYMENT_ADDRESS -- this smart contract acts as the paymaster, designating how much of the proceeds from the sale of the product is due to each product owner, and allowing each product owner to claim their share of the proceeds in real time; as such, this contract is executable only by the product owners.
    - corresponds to payment_abi.json
@@ -45,15 +53,15 @@ These functionalities are described in greater detail below. Additionally, we ho
 
 ## Purpose
 
-The purpose of HardBank is to build out the protocol which will allow transactions for physical products to be completely represented and executed on the blockchain. This means that both the cryptocurrency that is used to purchase the product, as well as the product itself (more specifically -- a representation of the product) will be recorded on the blockchain.
+The purpose of HardBank is to build the protocol which will allow transactions for physical products to be completely executed on the blockchain. This means that both the cryptocurrency used to purchase the product as well the product being purchased will be represented on the blockchain.
 
-We define such transactions to be <b>fully on-chain</b> or <b>full-chain</b>.
+We define such transactions -- where both sides of the exchange are represented on the blockchain -- to be <b>full-chain transactions</b>.
 
 Purchasing an NFT for ETH is an example of a full-chain transaction: when the two assets are exchanged, both sides of the transaction -- (i) the NFT to buyer and (ii) the ETH to seller -- are recorded on the blockchain: the entire transaction is represented, in full, on the blockchain.
 
-Currently, there are many providers which allow crypocurrency to be used to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser to the merchant (or payments provider) is recorded on the blockchain; however, there is no information on the blockchain regarding the product that was purchased.
+Currently, there are many payment processors which allow crypocurrency to be used to purchase physical products. In these cases, the transfer of the cryptocurrency from the purchaser to the merchant (or payments provider) is recorded on the blockchain; however, there is no information on the blockchain regarding the product that was purchased.
 
-We define these transactions where only half of the information is recorded on the blockchain to be <b>half-chain</b> transactions. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
+We define these transactions where only half of the information is recorded on the blockchain to be <b>half-chain transactions</b>. Such transactions do not provide any information as to why the cryptocurrency was transferred from one account to another.
 
 Half-chain transactions make no use of any of the functionalities offered by blockchain technology and have questionable value-add beyond treating cryptocurrency as a currency.
 
@@ -65,41 +73,35 @@ These benefits are valuable enough to eventually push a tremendous amount of tra
 
 This page describes the project.
 
-## Buy.jsx
+## Demo.jsx
 
-This page is where the product is purchased.
+This page stores the Demo where full-chain transactions for physical branch can be executed on the Rinkeby testnet.
 
-For any given product, we injectively represent the product with a unique NFT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today.
+We injectively represent the branch with a unique SBT smart contract address. These 1-to-1 pairings are meant to mirror how barcodes are used to represent products in commerce today. Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of SBTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
 
-Just as a barcode is scanned to initiate the purchase of a product, the purchasing journey for our protocol begins with the purchaser minting an NFT from the aforementioned NFT smart contract address. Both sides of this transaction are recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the NFT (or product), and (ii) the NFT (or representation of the product) transferred to the purchaser in exchange for the payment. This is a full-chain tranasction.
+![HIW4](HIW4.jpg)
 
-The resulting NFT is not an art piece or a speculative asset, but a receipt that represents the product on the blockchain. We are utilizing the functionality of NFTs as single-form unique entries on the blockchain.
+Just as a barcode is scanned to initiate the purchase of a product, the purchasing journey under our protocol begins with the purchaser minting an SBT from the aforementioned SBT smart contract address. Both sides of this transaction are consequently recorded on the blockchain — (i) the cryptocurrency used to mint (or pay for) the SBT (or product), and (ii) the SBT (or representation of the product) transferred to the purchaser in exchange for the payment. This is a full-chain tranasction.
 
-Since there is no maximum limit to how many units of a given product can be sold, there is no maximum cap to the number of NFTs which can be minted from these addresses -- unless the product in question is meant to be a limited edition product.
-
-## Claim.jsx
-
-This page is where the purchased product is claimed.
+![HIW1](HIW1.jpg)
 
 Upon completing the full-chain transaction, the purchaser will then want to claim the physical product by providing the merchant with a physical address to receive the product.
 
-It is essential that each NFT that is minted can only claim one product. We accomplish this by having our claim process mimic a token airdrop exclusive to NFT holders -- for example, the ApeCoin airdrop for BAYC/MAYC holders -- which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
+It is essential that each SBT that is minted can only claim one product. We accomplish this by having our claim process mimic a token airdrop exclusive to NFT holders -- for example, the ApeCoin airdrop for BAYC/MAYC holders -- which tracks the status of whether or not an NFT has already been used to claim tokens from an airdrop.
 
-Like an airdrop, our claim function provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
+In addition to providing the physical address to receive the product, the purchaser must also provide the merchant with the index number of the SBT that was minted to complete the claim process. In order for this process to execute, the purchaser must be holding the SBT which corresponds to the index number that was provided. This exchange will ensure that the index number of each SBT that has completed a claim is been recorded on the blockchain. If the same index number initiates a second claim, the process will fail, ensuring that each minted SBT can only claim one product.
 
-Upon providing the physical address to receive the product, the purchaser must provide the merchant with the index number of the NFT that was minted to claim the loyalty tokens and complete the claim process. In order for this process to execute, the purchaser must be holding the NFT which corresponds to the index number that was provided*.
+![HIW2](HIW2.jpg)
 
-This exchange will ensure that the index number of each NFT that has claimed its loyalty tokens is been recorded on the blockchain. If the same index number initiates a second claim, the process will fail. This ensures that each NFT that is minted can only claim one product.
+Since it mimics an airdrop, our claim function also provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
 
-It should noted there are several alternatives worth considering:
- - Using NTTs instead of NFTs to represent products
- - Burning or altering the state of the NFT in exchange for loyalty tokens during the claim process to ensure there is limited funny business
+![HIW3](HIW3.jpg)
 
 ## Owner.jsx
 
 This is page is for the product owners to see the proceeds from the sale of the product, as well as to claim their share of the proceeds.
 
-The proceeds from minting the NFTs are stored in the NFT's smart contract. These proceeds can be withdrawn to a payment smart contract by the product owners.
+The proceeds from minting the SBTs are stored in the SBT's smart contract. These proceeds can be withdrawn to a payment smart contract by the product owners.
 
 In the payment smart contract, the product owners can choose to divvy up the proceeds amongst themselves to their choosing. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
 
@@ -116,10 +118,8 @@ Under the HardBank protocol, the purchaser and the merchant interact directly, a
 There is also the obvious issue of adoption. While many merchants tout that they are ready to accept cryptocurrency as payments, and many providers have been set up to execute these payments, it is clear that the volume of half-chain transactions is extremely small. Is there any actual demand, at this time, to use cryptocurrency to purchase physical products?
 
 On the coding side, there is definitely some clunkiness, and we would like to add (or experiment with) certain features, including:
- - checking if an NFT has already been used to claim an order
- - experimenting with a burn or altering functionality to the NFT upon claiming an order
+ - checking if an SBT has already been used to claim an order
+ - automating the claim process such that we automatically check with index number is in the purchaser's wallet
  - saving the inputted physical address in a way that is not linked to the wallet address that is used to execute the claim
- - tokengating entry to the "Owner" section
- - conducting a check in real time for NFT ownership status in order to ensure that only NFT holders can access the Payable smart contract
- - positioning of the login button in the navigation bar
- - etc etc
+ - tokengating entry to the "Owner" section to TrunkNFT owners
+ - conducting real-time checks for TrunkNFT ownership status in order to ensure that only TrunkNFT holders can view and withdraw proceeds

@@ -97,7 +97,7 @@ In addition to providing the physical address to receive the product, the purcha
 ![HIW2](HIW2.jpg)
 
 
-If the same index number initiates a second claim, the process will fail, ensuring that each minted SBT can only claim one product.
+If the same index number initiates a second claim, then the process will fail, ensuring that each minted SBT can only claim one product.
 
 Since it mimics an airdrop, our claim function also provides an opportunity for merchants to reward its customers with loyalty tokens, sent to the purchaser at time of claim. The precise functionality of the loyalty token can be determined by the merchant, and having this option is a great way to encourage repeat purchases, word-of-mouth marketing, and build a community for a product.
 
@@ -113,7 +113,7 @@ The proceeds from minting the SBTs are stored in the SBT's smart contract. These
 
 In the payment smart contract, the product owners can choose to divvy up the proceeds amongst themselves to their choosing. The implications of this transparency and functionality are easy to imagine, and are consequential to fundraising, investing, compensation, payment cycles, and other aspects of 'real' business.
 
-Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owner. The resulting value-adds will spur more efficient allocation of capital and help better products to be developed, providing a net positive for the market (and species-being) as a whole.
+Taken as a whole, these functionalities provide the capacity to illuminate not only the relationship between the purchaser and the merchant, but also that of the product operator and the product owner. The resulting value-adds will spur more efficient allocation of capital and push for the development of better products, providing a net positive for the market as a whole.
 
 ## Shortcomings and things that need to be built
 
@@ -121,13 +121,13 @@ At the theoretical level, the largest shortcoming comes with providing the physi
 
 There are also issues regarding disputes -- for example, what happens in the event that the purchaser says the physical product has not yet arrived, but the merchant says the product was already sent two weeks ago? There are many examples of disputes; and payment processors act as third-parties to resolve said disputes, even going so far as to go into their own pockets to refund transactions.
 
-Under the HardBank protocol, the purchaser and the merchant interact directly, and there is no third-party to hold the merchant accountable once the payment has been made. It is possible to set up a third party which handles logistics; effectively verfiying stock, checking on orders, and executing delivery. It would be capitally intensive to build this third party, and this prcoess could also be expensive for certain merchants who may not have the funds to create the initial set amount of invetory.
+Under the HardBank protocol, the purchaser and the merchant interact directly, and there is no third-party to hold the merchant accountable once the payment has been made. It is possible to set up a third party which handles logistics; effectively verfiying stock, checking on orders, and executing delivery. It would be capitally intensive to build this third party, and this prcoess could also be expensive for certain merchants who may not have the funds to provide the initial amount of invetory.
 
 There is also the obvious issue of adoption. While many merchants tout that they are ready to accept cryptocurrency as payments, and many providers have been set up to execute these payments, it is clear that the volume of half-chain transactions is extremely small. Is there any actual demand, at this time, to use cryptocurrency to purchase physical products?
 
 On the coding side, there is definitely some clunkiness, and we would like to add (or experiment with) certain features, including:
- - checking if an SBT has already been used to claim an order
- - automating the claim process such that we automatically check with index number is in the purchaser's wallet
- - saving the inputted physical address in a way that is not linked to the wallet address that is used to execute the claim
+ - providing a section to check if the index number of an SBT has already been used to claim an order
+ - automating the claim process such that there is no need for the purchaser to check and submit the index number of the SBT in the purchaser's wallet
+ - saving the inputted physical address in a way that is not linked to the wallet address used to execute the claim
  - tokengating entry to the "Owner" section to TrunkNFT owners
- - conducting real-time checks for TrunkNFT ownership status in order to ensure that only TrunkNFT holders can view and withdraw proceeds
+ - conducting real-time checks for TrunkNFT ownership status in the process for viewing and withdrawing proceeds

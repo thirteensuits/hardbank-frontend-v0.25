@@ -38,7 +38,7 @@ As denoted in the config.json, the applications on this website are meant to be 
 
 There are three smart contract addresses that can be configured in the config.json with their respective ABIs in the config subfolder located in the public folder:
 
- - BRANCH_NFT_ADDRESS -- this smart contract acts as the barcode for the product; products are purchased by minting NFTs from this contract.
+ - BRANCH_SBT_ADDRESS -- this smart contract acts as the barcode for the product; products are purchased by minting NFTs from this contract.
    - corresponds to abi.json
 
  - TOKEN_ADDRESS -- this smart contract is engaged during the claim process and provides loyalty tokens to reward those who purchase the product while also ensuring that each minted NFT can only undergo the claim process once - i.e. one NFT can only claim one product.

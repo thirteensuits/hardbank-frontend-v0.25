@@ -13,7 +13,7 @@ function Home() {
             </h5>
             <br></br>
             <p style={{textAlign: 'center'}}>
-                <i><b>Full-Chain Transaction<b>
+                <i><b>Full-Chain Transaction</b>
                 <br></br>
                 A transaction fully executed on-chain, such that both sides of the exchange -- (i) the crypto used to purchase the product and (ii) the product that is purchased -- are represented on-chain.</i>
                 <br></br>

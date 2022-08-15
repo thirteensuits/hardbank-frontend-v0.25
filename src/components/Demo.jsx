@@ -121,14 +121,14 @@ function Demo() {
               <button style={{marginBottom: 5, padding: 5, paddingLeft: 20, paddingRight: 20}}>REGISTER</button>
               </div>
               <br></br>
-              3/ To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm all information.
+              3/ To complete the process, click "Claim", then input your index number, and then click "Confirm" to confirm the claim.
               <br></br>
               <br></br>
               <Provider store={store2}>
               <Reward />
               </Provider>
               <br></br>
-              Upon completion, you will receive 10 $TREE loyalty tokens in your Web3 wallet -- but remember, each BranchSBT can only be claimed once!              <br></br>
+              Upon completion, you will receive 10 $TREE loyalty tokens in your Web3 wallet -- but remember, each BranchSBT can only be used for one claim!              <br></br>
           </div>
           <div>
           <img src={img2} style={{width: "100%"}}/>

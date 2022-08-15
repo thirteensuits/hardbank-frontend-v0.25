@@ -85,11 +85,11 @@ const Check = () => {
 
 return (
 <div>
-Check if BranchNFT has been claimed by Index Number (remember, each BranchNFT can only be claimed once!!)
+Check if BranchSBT has been claimed by Index Number (remember, each BranchNFT can only be claimed once!!)
 <br></br>
 <br></br>
 
-              <b>BranchNFT Index Number:</b>&nbsp;&nbsp;
+              <b>BranchSBT Index Number:</b>&nbsp;&nbsp;
               <input
             type='number'
             size='md'

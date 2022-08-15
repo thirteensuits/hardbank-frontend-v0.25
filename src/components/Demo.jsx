@@ -10,7 +10,7 @@ function Home() {
             <h1 style={{textAlign: 'center'}}><b>HardBank v0.25</b></h1>
             <h5 style={{textAlign: 'center'}}><i>realizing full-chain commerce</i></h5>
             <br></br>
-              <div class="container" style={{textAlign: 'center', width: "75%"}}>
+              <div class="container" style={{textAlign: 'center', width: "80%"}}>
                 Our protocol reimagines how everyday physical products are bought and sold.
                 <br></br>
                 <br></br>

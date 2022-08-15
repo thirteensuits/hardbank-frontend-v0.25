@@ -110,7 +110,7 @@ VIEW
 </button>
        ) : (
         <>
-<b>BranchNFT Index Number:</b>  {tan}
+<b>BranchSBT Index Number:</b>  {tan}
 </>
 
 )}

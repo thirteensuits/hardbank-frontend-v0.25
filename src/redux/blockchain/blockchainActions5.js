@@ -63,7 +63,7 @@ export const connect5 = () => {
         if (networkId == CONFIG.NETWORK.ID) {
           const SmartContractObj = new Web3EthContract(
             abi,
-            CONFIG.BRANCH_NFT_ADDRESS
+            CONFIG.BRANCH_SBT_ADDRESS
           );
           dispatch(
             connectSuccess({

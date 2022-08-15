@@ -9,7 +9,7 @@ const Revenue = () => {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [CONFIG, SET_CONFIG] = useState({
-    BRANCH_NFT_ADDRESS: "",
+    BRANCH_SBT_ADDRESS: "",
     NETWORK: {
       NAME: "",
       SYMBOL: "",
@@ -34,7 +34,7 @@ const Revenue = () => {
       .withdraw()
       .send({
         gasLimit: String(totalGasLimit),
-        to: CONFIG.BRANCH_NFT_ADDRESS,
+        to: CONFIG.BRANCH_SBT_ADDRESS,
         from: blockchain.account,
       })
   };

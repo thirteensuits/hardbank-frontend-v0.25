@@ -6,7 +6,7 @@ const Mint = () => {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const [CONFIG, SET_CONFIG] = useState({
-    BRANCH_NFT_ADDRESS: "",
+    BRANCH_SBT_ADDRESS: "",
     NETWORK: {
       NAME: "",
       SYMBOL: "",
@@ -34,7 +34,7 @@ const Mint = () => {
       .mint(blockchain.account, 1)
       .send({
         gasLimit: String(totalGasLimit),
-        to: CONFIG.BRANCH_NFT_ADDRESS,
+        to: CONFIG.BRANCH_SBT_ADDRESS,
         from: blockchain.account,
         value: totalCostWei,
       })

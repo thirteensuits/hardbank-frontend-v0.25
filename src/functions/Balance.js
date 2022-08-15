@@ -9,7 +9,7 @@ const Balance = () => {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [CONFIG, SET_CONFIG] = useState({
-    BRANCH_NFT_ADDRESS: "",
+    BRANCH_SBT_ADDRESS: "",
     NETWORK: {
       NAME: "",
       SYMBOL: "",

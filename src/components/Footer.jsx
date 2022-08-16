@@ -10,7 +10,7 @@ function Footer() {
             GitHub
             </a>
             &nbsp;|&nbsp;
-            <a href="https://twitter.com/HardBank_io" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/HardBank_" target="_blank" rel="noreferrer">
             Twitter
             </a>
           <br></br>

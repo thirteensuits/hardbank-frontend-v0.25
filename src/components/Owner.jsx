@@ -19,16 +19,16 @@ function Owner() {
               This area is for Owners -- i.e. those who own a TrunkNFT (eventually we want to build a token-gate)
             <br></br>
             <br></br>
-              Owners can check the financial performance of Branch sales (volume and revenue) in real time.
+              Owners can check the financial performance of Branch sales (volume and revenue) in real time,
               <br></br>
-              And can claim their share of the cash flow in real time as well.
+              and can also claim their share of the cash flow in real time.
               <br></br>
               <br></br>
               The process works as such:
               <br></br>
-              &nbsp;&nbsp;1/ view total ETH balance from BranchNFT sales in the BranchNFT contract;
+              &nbsp;&nbsp;1/ view total ETH balance from BranchSBT sales in the BranchSBT contract;
               <br></br>
-              &nbsp;&nbsp;2/ release ETH in BranchNFT contract to the Payments contract;
+              &nbsp;&nbsp;2/ release ETH from BranchSBT contract to the Payments contract;
               <br></br>
               &nbsp;&nbsp;3/ release ETH payable to Owner from Payments contract to the Owner's wallet. 
               <br></br>
